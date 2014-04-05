@@ -33,7 +33,7 @@ void Collectable::loadContent(){
 
 	//set material properties
 	_node->setMaterialFlag(EMF_LIGHTING, false);
-	std::string pathToTexture = "textures/" + _itemName + ".jpg";
+	std::string pathToTexture = "textures/" + _itemName + ".png";
 	_node->setMaterialTexture(0, game.getDevice()->getVideoDriver()->getTexture(pathToTexture.c_str()));
 	_alive = true;
 
